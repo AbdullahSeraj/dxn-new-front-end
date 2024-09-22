@@ -1,0 +1,53 @@
+// Default Colors
+$bg-shade: #EEEFFB;
+$grey-text: #151875;
+$accent: #FB2E86;
+$white: #FFFFFF;
+$liner-bg: #F3F9FF;
+$blue-gradiant: #1389FF;
+$pink-gradiant: #FA3BE5 #FF289F;
+$sky-blue-gradiant: #46D9FF #19A5F9;
+$mint-green-gradiant: #36E6D5 #29E871;
+$ugsadug: #9F63B5;
+$text: #151875;
+$sky-blue: #00C1FE;
+$section-hover: #2F1AC4;
+$sale-tage-color: #3F509E;
+$price-tag-color: #FB2448;
+$violet: #7E33E0;
+$sub-text-color: #F1F0FF;
+$sub-text-color2: #8A8FB9;
+$page-button-color: #E0D3F5;
+$pink: #FB2E86;
+$oran: #FB923C;
+$bg-card: #F6F7FB;
+$title-color: #1A0B5B;
+$bg-product: #F7F7F7;
+$bg-pink: #F6F5FF;
+$greeng: #07a11b;
+
+:export {
+    bg-shade: $bg-shade;
+    grey-text: $grey-text;
+    accent: $accent;
+    white: $white;
+    liner-bg: $liner-bg;
+    blue-gradiant: $blue-gradiant;
+    pink-gradiant: $pink-gradiant;
+    sky-blue-gradiant: $sky-blue-gradiant;
+    mint-green-gradiant: $mint-green-gradiant;
+    ugsadug: $ugsadug;
+    text: $text;
+    sky-blue: $sky-blue;
+    section-hover: $section-hover;
+    sale-tage-color: $sale-tage-color;
+    price-tag-color: $price-tag-color;
+    price-tag-color: $violet;
+    sub-text-color: $sub-text-color;
+    sub-text-color2: $sub-text-color2;
+    page-button-color: $page-button-color;
+    pink: $pink;
+    bg-card: $bg-card;
+    title-color: $title-color;
+    bg-product: $bg-product;
+}
