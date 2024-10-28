@@ -12,6 +12,7 @@ import Dashboard from './pages/Dashboard'
 import Cookies from "js-cookie"
 import DashboardProducts from './pages/DashboardProducts'
 import DashboardUsers from './pages/DashboardUsers'
+import DashboardOrders from './pages/DashboardOrders'
 import SecurityUser from './components/security/SecurityUser'
 import SecurityAdmin from './components/security/SecurityAdmin'
 import NotFound from './components/security/NotFound'
@@ -25,6 +26,7 @@ import DashboardCategories from './pages/DashboardCategories'
 import Demo from './pages/Demo'
 import DashboardSettings from './pages/DashboardSettings'
 import Paypal from './pages/Paypal'
+import Orders from './pages/Orders'
 
 function App() {
   const token = Cookies.get("accessToken")
@@ -38,6 +40,7 @@ function App() {
       <Route path='dashboard' element={<SecurityAdmin><Dashboard /></SecurityAdmin>} >
         <Route path="products" element={<DashboardProducts />} />
         <Route path='users' element={<DashboardUsers />} />
+        <Route path='orders' element={<DashboardOrders />} />
         <Route path='categories' element={<DashboardCategories />} />
         <Route path='settings' element={<DashboardSettings />} />
       </Route>
@@ -48,6 +51,7 @@ function App() {
       <Route path="about" element={<About />} />
       <Route path="contact" element={<ContactUs />} />
       <Route path="demo" element={<SecurityUser><Demo /></SecurityUser>} />
+      <Route path="orders" element={<SecurityUser><Orders /></SecurityUser>} />
       <Route path="demo/paypal" element={<SecurityUser><Paypal /></SecurityUser>} />
       <Route path="*" element={<NotFound />} />
     </Route>

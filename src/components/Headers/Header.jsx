@@ -84,6 +84,7 @@ const Header = () => {
                                         {role === "admin" &&
                                             <Link to={"/dashboard/products"} className="list">Dashboard</Link>
                                         }
+                                        <Link to={"orders"} className="list">Orders</Link>
                                         <button className="list text-left" onClick={handleSignout}>Logout</button>
                                     </div>
 

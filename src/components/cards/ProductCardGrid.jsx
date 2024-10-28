@@ -10,6 +10,7 @@ import { FaHeart, FaRegHeart } from "react-icons/fa"
 import Radio from "../coms/Radio"
 import Cookies from "js-cookie"
 import { useNavigate } from "react-router-dom"
+import { useProductQuery } from "../../redux/features/productApiSlice"
 
 const ProductCardGrid = ({ product }) => {
     const token = Cookies.get("accessToken")

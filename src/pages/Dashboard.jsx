@@ -1,6 +1,7 @@
 import { NavLink, Outlet, useNavigate } from 'react-router-dom'
 import { AiOutlineProduct } from "react-icons/ai";
 import { TbUsersGroup } from "react-icons/tb";
+import { TbBorderStyle2 } from "react-icons/tb";
 import { useGetProfileQuery } from '../redux/features/userApiSlice';
 import personImg from "../assets/login-animation.gif"
 import Cookies from "js-cookie"
@@ -51,6 +52,12 @@ const Dashboard = () => {
                             <div className='flex items-center gap-2'>
                                 <TbUsersGroup size={"20px"} />
                                 Users
+                            </div>
+                        </NavLink>
+                        <NavLink to="orders" className={({ isActive }) => `${isActive ? "font-bold bg-blue-50 text-blue-700 hover:bg-blue-100" : "hover:bg-blue-500"} rounded-lg py-2 px-5`}>
+                            <div className='flex items-center gap-2'>
+                                <TbBorderStyle2 size={"20px"} />
+                                Orders
                             </div>
                         </NavLink>
                         <NavLink to="categories" className={({ isActive }) => `${isActive ? "font-bold bg-blue-50 text-blue-700 hover:bg-blue-100" : "hover:bg-blue-500"} rounded-lg py-2 px-5`}>
