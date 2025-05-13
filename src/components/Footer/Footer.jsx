@@ -54,7 +54,8 @@ const Footer = () => {
             <div className="py-4 bg-[#E7E4F8]">
                 <div className="w-[80%] mx-auto flex items-center justify-between">
 
-                    <p className="text-gray-400">©<a href="https://serajs-net.web.app" className="hover:text-pink" target="_blank">Serajs.Net</a> - All Rights Reserved</p>
+                    {/* <p className="text-gray-400">©<a href="https://serajs-net.web.app" className="hover:text-pink" target="_blank">Serajs.Net</a> - All Rights Reserved</p> */}
+                    <p className="text-gray-400">© Eiad Arja | All Rights Reserved</p>
 
                     <div className="flex items-center gap-2">
                         <FacebookIcon className="cursor-pointer" />
