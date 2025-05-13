@@ -10,7 +10,7 @@ import { useDispatch } from 'react-redux'
 const SigninWithGoogle = () => {
     const dispatch = useDispatch()
     const navigate = useNavigate()
-    const [signinWithGoogle, { isError, isLoading, error }] = useSigninWithGoogleMutation()
+    const [signinWithGoogle, { isLoading }] = useSigninWithGoogleMutation()
 
     const handleClick = async () => {
         try {
